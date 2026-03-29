@@ -9,14 +9,10 @@ int main()
 
     for(int i = 0; i < n; i++)
     {
+        int sum = 0;
         for(int j = i; j < n; j++)
         {
-            int sum = 0; // reset here ✅
-
-            for(int k = i; k <= j; k++) // include j ✅
-            {
-                sum += arr[k];
-            }
+            sum += arr[j]; 
 
             if(sum == 0)
             {
