@@ -17,6 +17,7 @@ int main()
     rightmax[i] = max(rightmax[i+1],arr[i]);
 }
 int water =0;
+
 for(int i=0;i<n;i++)
 {
     water += min(leftmax[i],rightmax[i]) - arr[i];
