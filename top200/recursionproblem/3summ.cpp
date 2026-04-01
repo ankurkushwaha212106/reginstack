@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    vector<int>arr = {1,2,3,4,5,1,2,3,1,2};
+    vector<int>arr = {1,2,3,4,5,2,3,4,9};
     int n = arr.size();
     int target;
     cin>>target;
-  set<vector<int>>st;
+    set<vector<int>>st;
     for(int i=0;i<n-2;i++)
     {
         for(int j=i+1;j<n-1;j++)
@@ -16,9 +16,9 @@ int main()
                 int sum = arr[i] + arr[j] + arr[k];
                 if(sum == target)
                 {
-                vector<int>temp = {arr[i],arr[j],arr[k]};
-                sort(temp.begin(),temp.end());
-                st.insert(temp);
+                    vector<int>temp = {arr[i],arr[j],arr[k]};
+                    sort(temp.begin(),temp.end());
+                    st.insert(temp);
                 }
             }
         }
@@ -29,7 +29,7 @@ int main()
     }
     else
     {
-        cout<<st.size()<<endl;
+        cout<<st.size();
     }
     return 0;
 }
