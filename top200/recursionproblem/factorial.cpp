@@ -4,11 +4,11 @@ int main()
 {
     int n;
     cin>>n;
-    int fact = 1;
+    int fact =1;
     for(int i=2;i<=n;i++)
     {
-       fact = fact * i;
+        fact = fact * i;
     }
-   cout << fact <<endl;
+    cout<<fact;
    return 0;
 }
