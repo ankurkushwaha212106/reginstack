@@ -7,7 +7,6 @@ int largestRectangleArea(int arr[], int n) {
     int maxArea = 0;
 
     for (int i = 0; i <= n; i++) {
-        // Last me 0 height assume karte hain
         int currHeight = (i == n) ? 0 : arr[i];
 
         while (!st.empty() && currHeight < arr[st.top()]) {
