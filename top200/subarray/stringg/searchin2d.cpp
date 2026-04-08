@@ -8,13 +8,8 @@ int main()
     {
         for(int j =0;j<3;j++)
         {
-            if(arr[i][j] == x)
-            {
-                cout<<"yes";
-
-                return 0;
-            }
+            cout<<arr[i][j]<<"  ";
         }
     }
-    cout<<"no";
+    return 0;
 }
